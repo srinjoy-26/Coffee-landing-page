@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --main-color: #deab5f;
+  --primary-color: #312e2e;
+}
+
+button{
+  padding: 10px 30px;
+  background: var(--main-color);
+  border: none;
+  cursor: ponter;
+  border-radius: 5px;
+}
+
+body{
+  background-color: #100e0f;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.navbar li{
+  list-style: none;
+  display: inline;
+}
+
+.navbar li a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1.5rem;
+  transition: all 0.2s ease-out;
+  padding: 0.5rem;
+  
+}
+
+.navbar a:hover{
+  border: 2px solid var(--main-color);
+  border-radius: 0.5rem;
+  
+}
+
+.header{
+  background-image: url('./images/pexels-nao-triponez-129207.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  font-weight: normal;
+  font-family:"Playfair Display SC", serif;
+}
+
+.main-heading{
+  position: absolute;
+  top: 5rem;
+  font-size: 4rem;
+  word-spacing: 10px;
+}
+.primary-heading{
+  position: absolute;
+  bottom:4rem ;
+  font-size: 4rem;
+  word-spacing: 10px;
+  margin-bottom: -40px;
+}
+
+.main-btn{
+  position: absolute;
+  bottom: 2rem;
+  background: transparent;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  transform: translateY(60px);
+}
+
+.main-btn:hover{
+  color: #100e0f;
+  background: var(--main-color);
+  border: #100e0f;
+  
+}
+
+/* our story */
+
+#our-story{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+.img{
+  background-image: url('./images/pexels-chitokan-2183027-removebg-preview.png');
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+}
+
+.title-style{
+  display: flex;
+  align-items: center;
+}
+
+.title{
+  font-family:"Playfair Display SC", serif;
+  font-size: 4rem;
+  transform: translateX(-100px);
+}
+
+
+.line{
+  width: 100px;
+  height: 2px;
+  background: #fff;
+  transform: translateX(-120px);
+}
+
+.section-content p{
+  max-width: 500px;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin: 20px 0;
+}
+.section-content{
+  padding: 1.5rem;
+}
+
+/* perfect place to enjoy */
+
+.coffee-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  flex-wrap: wrap;
+}
+.coffee-content{
+  max-width: 500px;
+  padding: 1.5rem;
+}
+
+.coffee-content p{
+  
+  font-family: sans-serif;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+.title2{
+  font-family:"Playfair Display SC", serif;
+  font-size: 3rem;
+}
+
+.img2{
+  background-image: url('./images/2.png');
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+}
+
+/* products section with cards */
+
+.products{
+  margin-top: 5rem;
+  color: #fff;
+}
+
+.title3{
+  font-size: 4rem;
+  margin-left: 5rem;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+  position: relative;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  padding: 0 20px;
+  border-radius:5px ;
+  margin-bottom: 4rem;
+  height: 25rem;
+  width: 18.75rem;
+  position: relative;
+}
+
+.card-img{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -60px;
+}
+
+.img-one{
+  background-image: url(./images/1.png);
+  background-position: center;
+  background-size: cover;
+}
+.img-two{
+  background-image: url(./images/3.png);
+  background-position: center;
+  background-size: cover;
+}
+.img-three{
+  background-image: url(./images/4.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-title{
+  margin-top: 20px;
+}
+
+.card .items p{
+  margin-bottom: 1.5rem;
+}
+
+.title3::after{
+  content:"";
+  position: absolute;
+  right: 70%;
+  bottom: 0;
+  border: 2px solid #fff;
+  width: 30%;
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+footer h1{
+  font-family:"Playfair Display SC", serif;
+  
+}
+
+footer span{
+  color: var(--main-color);
+}
+
+hr{
+  width: 80%;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
+}
+
+footer div {
+  width: 19rem ;
+  margin-top: 20px;
+}
+
+footer p{
+  margin-top: 1.5rem;
+}
+
+@media  screen and (max-width:550px) {
+  
+  .section-content .title{
+    margin-left: 2rem;
+    font-size: 3rem;
+  }
+
+  .main-heading{
+    font-size: 3rem;
+  }
+  .primary-heading{
+    font-size: 3rem;
+  }
+
+  .title3{
+    margin-left: 3rem;
+  }
+
+  .side{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .menu-icn i{
+    display: none;
+  }
+}
+
+.menu-icn{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+.cross-icn{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.sidebar{
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding:1.5rem ;
+  background: transparent;
+  
+}
+
+.sidebar li a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+}
+
+.sidebar li{
+  list-style: none;
+  margin-bottom: 2rem;
+  width: 100%;
+  
+}
+.sidebar ul{
+  width: 100%;
+}
+.sidebar a:hover{
+  background-color: #B6BBC4;
+  color: #100e0f;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.copyright{
+  color: #fff;
+  
+  margin: 2rem 0;
+  font-weight: 700;
+}
+.copyright span{
+  color: var(--main-color);
+}
